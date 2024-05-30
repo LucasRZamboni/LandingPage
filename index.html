@@ -13,24 +13,25 @@
     />
 
     <link rel="stylesheet" href="style/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style/sobre.css" />
+    <title>Landing Page</title>
   </head>
   <body>
     <header>
       <div class="navbar">
-        <div class="logo"><h3>NomeEmpresa</h3></div>
+        <div class="logo"><a href="#home">NomeEmpresa</a></div>
         <ul class="links">
           <li>
-            <a href="home">Home</a>
+            <a href="#home" class="active">Home</a>
           </li>
           <li>
-            <a href="sobre">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
-            <a href="serviços">Serviços</a>
+            <a href="#servicos">Serviços</a>
           </li>
           <li>
-            <a href="contato">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
         </ul>
         <a href="#" class="action_btn">Conhecer</a>
@@ -38,25 +39,28 @@
           <i class="fa-solid fa-bars"></i>
         </div>
         <div class="dropdown_menu">
-          <li>
-            <a href="home">Home</a>
-          </li>
-          <li>
-            <a href="sobre">Sobre</a>
-          </li>
-          <li>
-            <a href="serviços">Serviços</a>
-          </li>
-          <li>
-            <a href="contato">Contato</a>
-          </li>
-          <li>
-            <a href="#" class="action_btn">Conhecer</a>
-          </li>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#servicos">Serviços</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+            <li>
+              <a href="#" class="action_btn">Conhecer</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-    <section>
+          
+    <section id="home">
       <h2>Bem vindo(a)!</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
@@ -64,7 +68,108 @@
         deleniti architecto asperiores laudantium, assumenda fugit ipsa eaque
         nisi aspernatur ad doloremque?
       </p>
+    </section> 
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="box-card">
+          <h3>Missão</h3>
+          <img src="images/missao.png" alt="missão">
+        </div>
+          <p>
+            Nossa missão é fornecer soluções tecnológicas inovadoras e
+            confiáveis que impulsionem o sucesso dos nossos clientes,
+            simplificando processos e promovendo a eficiência operacional.
+          </p>
+        </div>
+        <div class="card">
+          <div class="box-card">
+          <h3>Visão</h3>
+          <img src="images/visao.png" alt="visão">
+        </div>
+          <p>
+            Buscamos ser reconhecidos como líderes em soluções de T.I.,
+            oferecendo serviços de ponta e contribuindo para um mundo mais
+            conectado, seguro e eficiente.
+          </p>
+        </div>
+        <div class="card">
+          <div class="box-card">
+          <h3>Valores</h3>
+          <img src="images/cliente.png" alt="valores">
+        </div>
+          <ul>
+            <li>
+              <h4>Excelência Técnica</h4>
+              <p>
+                Comprometemo-nos a oferecer soluções de alta
+                qualidade, baseadas nas melhores práticas e tecnologias
+                emergentes.
+              </p>
+            </li>
+            <li>
+              <h4>Inovação Constante</h4>
+              <p>
+                Estamos sempre buscando novas maneiras de
+                resolver problemas e agregar valor aos nossos clientes, através
+                da inovação contínua.
+              </p>
+            </li>
+            <li>
+              <h4>Parceria</h4>
+              <p>
+                Valorizamos a colaboração e o trabalho em equipe,
+                tanto com nossos clientes quanto com nossos parceiros, para
+                alcançar objetivos comuns.
+              </p>
+            </li>
+            <li>
+              <h4>Integridade</h4> 
+              <p>
+                Agimos com honestidade, transparência e ética em
+                todas as nossas interações, mantendo a confiança dos nossos
+                clientes e colegas.
+              </p>
+            </li>
+            <li>
+              <h4>Responsabilidade Social e Ambiental</h4>
+              <p>
+                Assumimos a
+                responsabilidade pelos impactos sociais e ambientais das nossas
+                operações, buscando sempre minimizá-los e contribuir
+                positivamente para a comunidade.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      <p>
+        Oferecemos uma variedade de serviços para atender às suas necessidades.
+      </p>
+    </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <footer>
+        <p>&copy; 2024 NomeEmpresa. Todos os direitos reservados.</p>
+        <div class="social_icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </footer>
+    </section>
+
+    <a href="#home" class="back_to_top"><i class="fa-solid fa-arrow-up"></i></a>
     <script src="js/script.js"></script>
   </body>
 </html>
