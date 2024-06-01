@@ -20,12 +20,17 @@
   transition: all 0.2s ease-in-out;
   letter-spacing: .5px;
 }
+section{
+  padding: 30px 0;
+  animation: fadeIn 1s ease-in-out;
+}
 body {
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 #home {
   width: 100%;
@@ -63,10 +68,7 @@ section:not(#home) {
   background: var(--color6);
 }
 #servicos {
-  background: url("../images/background2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: var(--color7);
 }
 #contato {
   background: var(--color3);
@@ -205,55 +207,7 @@ header {
   }
 }
 
-section {
-  animation: fadeIn 1s ease-in-out;
-}
-#contato h2{
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    color: var(--color4);
-}
-#contato form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 300px;
-  padding: 20px;
-}
 
-#contato form input,
-#contato form textarea,
-#contato form button {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  color: var(--color4);
-  background: var(--color2);
-}
-#contato form input::placeholder,
-#contato form textarea::placeholder{
-    color: var(--color9);
-}
-#contato form textarea{
-    resize: vertical;
-    max-height: 300px;
-    min-height: 100px;
-}
-
-#contato form button {
-  background: var(--color2);
-  color: var(--color4);
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-#contato form button:hover {
-  background: var(--color4);
-  color: var(--color2);
-}
 
 footer {
   background: rgba(255, 255, 255, 0.1);
@@ -267,11 +221,6 @@ footer {
 
 footer p {
   color: white;
-}
-
-.social_icons a {
-  color: white;
-  margin: 0 0.5rem;
 }
 
 .back_to_top {
